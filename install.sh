@@ -36,7 +36,8 @@ composer install --no-dev --optimize-autoloader
 if command -v npm &> /dev/null; then
     echo "📦 Installing Node.js dependencies..."
     npm install
-    npm run build
+    # Use the correct build script defined in package.json
+    npm run production
 else
     echo "⚠️  Node.js/npm not found. Skipping frontend build."
 fi
