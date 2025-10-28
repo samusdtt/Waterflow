@@ -22,6 +22,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// ✅ Fallback Home Route (Fix for "Route [home] not defined")
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
+
 // Authentication routes
 Route::middleware('guest')->group(function () {
     Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');

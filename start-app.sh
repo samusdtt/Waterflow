@@ -30,6 +30,7 @@ fi
 
 # Clear caches
 echo "🧹 Clearing Laravel caches..."
+php artisan route:clear 2>/dev/null || true
 php artisan view:clear 2>/dev/null || true
 php artisan cache:clear 2>/dev/null || true
 php artisan config:clear 2>/dev/null || true
