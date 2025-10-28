@@ -12,10 +12,21 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Using CDN for immediate functionality -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        .btn-primary { background-color: #3b82f6; border-color: #3b82f6; }
+        .btn-primary:hover { background-color: #2563eb; border-color: #2563eb; }
+        .card { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .navbar-brand { font-weight: bold; color: #3b82f6 !important; }
+    </style>
 </head>
 <body class="font-sans antialiased bg-gray-100">
     <div class="min-h-screen">
